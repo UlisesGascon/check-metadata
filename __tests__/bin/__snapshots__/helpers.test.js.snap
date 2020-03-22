@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`General CLI helpers Terminal format helpers (colors): printError 1`] = `
+Array [
+  "This is an error msg",
+]
+`;
+
+exports[`General CLI helpers Terminal format helpers (colors): printInfo 1`] = `
+Array [
+  "This is an information msg",
+]
+`;
+
+exports[`General CLI helpers Terminal format helpers (colors): printSuccess 1`] = `
+Array [
+  "This is a success msg",
+]
+`;
