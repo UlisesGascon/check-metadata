@@ -1,0 +1,1 @@
+console.log("This is check-metadata@0.0.1!")
