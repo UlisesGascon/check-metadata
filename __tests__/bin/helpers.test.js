@@ -1,4 +1,4 @@
-const { printError, printInfo, printSuccess } = require('../../bin/helpers')
+const { printError, printInfo, printSuccess, checkMetadata } = require('../../bin/helpers')
 const serializer = require('jest-serializer-ansi')
 
 expect.addSnapshotSerializer(serializer)
@@ -38,5 +38,12 @@ describe('General CLI helpers', () => {
     expect(console.log).toHaveBeenCalled()
     expect(console.log.mock.calls[0]).toMatchSnapshot()
     expect(console.log).toHaveBeenCalledTimes(1)
+  })
+})
+
+describe('General CLI Reporting', () => {
+  test('Should generate a valid report)', async () => {
+    const report = await checkMetadata('https://github.com')
+    expect(report).toMatchSnapshot()
   })
 })

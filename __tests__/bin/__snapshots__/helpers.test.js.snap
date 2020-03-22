@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`General CLI Reporting Should generate a valid report) 1`] = `"Argument provided: https://github.com"`;
+
 exports[`General CLI helpers Terminal format helpers (colors): printError 1`] = `
 Array [
   "This is an error msg",
