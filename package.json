@@ -1,0 +1,27 @@
+{
+  "name": "check-metadata",
+  "version": "0.0.1",
+  "description": "A CLI tool to fast check metadata for internet and local files 😎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesGascon/check-metadata.git"
+  },
+  "keywords": [
+    "metadata",
+    "exif",
+    "cli"
+  ],
+  "author": {
+    "name": "Ulises Gascón",
+    "url": "https://github.com/ulisesGascon"
+  },
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/UlisesGascon/check-metadata/issues"
+  },
+  "homepage": "https://github.com/UlisesGascon/check-metadata#readme"
+}
