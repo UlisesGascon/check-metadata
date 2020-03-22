@@ -25,6 +25,12 @@
     "exif",
     "cli"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test:coverage"
+    }
+  },
   "author": {
     "name": "Ulises Gascón",
     "url": "https://github.com/ulisesGascon"
@@ -35,6 +41,7 @@
   },
   "homepage": "https://github.com/UlisesGascon/check-metadata#readme",
   "devDependencies": {
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
     "jest-serializer-ansi": "^1.0.3",
     "standard": "^14.3.3"
