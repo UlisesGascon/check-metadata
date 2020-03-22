@@ -42,8 +42,21 @@ describe('General CLI helpers', () => {
 })
 
 describe('General CLI Reporting', () => {
-  test('Should generate a valid report)', async () => {
+  test('Should generate a valid report with a valid URL)', async () => {
     const report = await checkMetadata('https://github.com')
     expect(report).toMatchSnapshot()
+  })
+
+  test('Should generate a valid report with a valid PATH)', async () => {
+    const report = await checkMetadata('img/my_picture.png')
+    expect(report).toMatchSnapshot()
+  })
+
+  test('Should generate an error if argument is not a PATH or URL)', () => {
+    const nonValid = '*'
+    return checkMetadata(nonValid)
+      .catch(
+        e => expect(e.message).toMatch(`${nonValid} is not a valid URL or PATH!`)
+      )
   })
 })

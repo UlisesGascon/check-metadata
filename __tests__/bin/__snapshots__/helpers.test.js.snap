@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`General CLI Reporting Should generate a valid report) 1`] = `"Argument provided: https://github.com"`;
+exports[`General CLI Reporting Should generate a valid report with a valid PATH) 1`] = `"Argument provided img/my_picture.png is a valid PATH"`;
+
+exports[`General CLI Reporting Should generate a valid report with a valid URL) 1`] = `"Argument provided https://github.com is a valid URL"`;
 
 exports[`General CLI helpers Terminal format helpers (colors): printError 1`] = `
 Array [

@@ -7,7 +7,7 @@
 
   const ref = process.argv[2]
   if (!ref) {
-    printError('😬  Missing argument URL or valid PATH!')
+    printError('😬  Missing argument URL or PATH!')
     printInfo('👉  Example File: check-metadata my_picture.png')
     printInfo('👉  Example URL: check-metadata https://demo.com/cool-pic.png')
     process.exit(1)
