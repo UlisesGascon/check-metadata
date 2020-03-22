@@ -4,9 +4,17 @@
   "description": "A CLI tool to fast check metadata for internet and local files 😎",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "FORCE_COLOR=3 jest  --verbose",
+    "test:update": "FORCE_COLOR=3 jest --verbose --u",
+    "test:coverage": "FORCE_COLOR=3 jest --verbose  --coverage",
+    "test:watch": "FORCE_COLOR=3 jest --verbose  --watchAll",
     "lint": "standard",
     "lint:fix": "standard --fix"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -27,6 +35,13 @@
   },
   "homepage": "https://github.com/UlisesGascon/check-metadata#readme",
   "devDependencies": {
+    "jest": "^25.1.0",
+    "jest-serializer-ansi": "^1.0.3",
     "standard": "^14.3.3"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "jest-serializer-ansi"
+    ]
   }
 }
