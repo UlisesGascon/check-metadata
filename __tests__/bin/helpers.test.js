@@ -5,6 +5,7 @@ expect.addSnapshotSerializer(serializer)
 
 const consoleOrg = console.log
 const consoleError = console.error
+
 beforeEach(() => {
   jest.clearAllMocks()
   console.log = jest.fn()
